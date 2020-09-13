@@ -1,0 +1,18 @@
+logging:
+  level:
+    root: info
+    com.hjf.blog: debug
+  file:
+    path: log/blog-dev
+spring:
+  #数据连接
+  datasource:
+    username: root
+    password: admin
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=UTC&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+file:
+  upload:
+      path: C:/Users/hsj/Desktop/Java/
+      relativePath: /image/**

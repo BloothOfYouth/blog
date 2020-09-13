@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hjf.blog.dao.BlogDao">
+
+    <insert id="addOneBlog" useGeneratedKeys="true" keyProperty="id">
+        insert into t_blog
+        values (null,#{title},#{content},#{firstPicture},
+                #{flag},#{views},#{appreciation},
+                #{shareStatement},#{commentabled},#{published},
+                #{recommend},#{createTime},#{updateTime},#{type.id},#{user.id},#{description})
+    </insert>
+
+    <insert id="addBlog_Tags" parameterType="com.hjf.blog.entity.Blog">
+        insert into t_tag_blog values
+        <foreach collection="tags"  item="tag" open="(" close=")" separator="),(">
+            #{tag.id},#{id}
+        </foreach>
+    </insert>
+
+    <!-- 不推荐使用 update t_tag_blog set tag_id = #{tag.id} , tag_id = #{tag.id} , tag_id = #{tag.id} where blog_id = #{id} -->
+    <update id="updateBlog_Tags">
+        update t_tag_blog
+        <foreach collection="tags"  item="tag" open="set" separator=",">
+            tag_id = #{tag.id}
+        </foreach>
+        where blog_id = #{id}
+    </update>
+
+    <select id="findOneBlogHaveTags" resultMap="select_All_detail_Blog">
+        select
+            t_blog.id as blogId                  ,
+            title                                ,
+            content                              ,
+            first_picture                        ,
+            flag                                 ,
+            views                                ,
+            appreciation                         ,
+            share_statement                      ,
+            commentabled                         ,
+            published                            ,
+            recommend                            ,
+            t_blog.create_time as BlogcreateTime ,
+            t_blog.update_time as BlogUpdateTime ,
+            description                          ,
+            t_type.id as typeId                  ,
+            type_name                            ,
+            t_user.id as userId                  ,
+            nickname                             ,
+            avatar                               ,
+            t_tag_blog.tag_id as tagId           ,
+            tag_name
+        from t_blog,t_type,t_user,t_tag,t_tag_blog
+        where t_blog.type_id = t_type.id and t_blog.user_id = t_user.id
+        and t_tag.id = t_tag_blog.tag_id and t_blog.id = t_tag_blog.blog_id
+        and t_blog.id = #{id}
+    </select>
+
+    <resultMap id="select_All_detail_Blog" type="com.hjf.blog.entity.Blog">
+        <id property="id" column="blogId"></id>
+        <result property="title" column="title"></result>
+        <result property="content" column="content"></result>
+        <result property="firstPicture" column="first_picture"></result>
+        <result property="flag" column="flag"></result>
+        <result property="views" column="views"></result>
+        <result property="appreciation" column="appreciation"></result>
+        <result property="shareStatement" column="share_statement"></result>
+        <result property="commentabled" column="commentabled"></result>
+        <result property="published" column="published"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="createTime" column="BlogCreateTime"></result>
+        <result property="updateTime" column="BlogUpdateTime"></result>
+        <result property="description" column="description"></result>
+        <association property="type" javaType="com.hjf.blog.entity.Type">
+            <id property="id" column="typeId"></id>
+            <result property="typeName" column="type_name"></result>
+        </association>
+        <association property="user" javaType="com.hjf.blog.entity.User">
+            <id property="id" column="userId"></id>
+            <result property="nickname" column="nickname"></result>
+            <result property="avatar" column="avatar"></result>
+        </association>
+        <collection property="tags" javaType="ArrayList" ofType="com.hjf.blog.entity.Tag">
+            <id property="id" column="tagId"></id>
+            <result property="tagName" column="tag_name"></result>
+        </collection>
+    </resultMap>
+
+    <select id="findOneBlogNoTags" resultMap="findOneBlogNoTags_">
+        select
+            t_blog.id as blogId                  ,
+            title                                ,
+            content                              ,
+            first_picture                        ,
+            flag                                 ,
+            views                                ,
+            appreciation                         ,
+            share_statement                      ,
+            commentabled                         ,
+            published                            ,
+            recommend                            ,
+            t_blog.create_time as BlogcreateTime ,
+            t_blog.update_time as BlogUpdateTime ,
+            description                          ,
+            t_type.id as typeId                  ,
+            type_name                            ,
+            t_user.id as userId                  ,
+            nickname                             ,
+            avatar
+        from t_blog,t_type,t_user
+        where t_blog.type_id = t_type.id and t_blog.user_id = t_user.id
+          and t_blog.id = #{id}
+    </select>
+
+    <resultMap id="findOneBlogNoTags_" type="com.hjf.blog.entity.Blog">
+        <id property="id" column="blogId"></id>
+        <result property="title" column="title"></result>
+        <result property="content" column="content"></result>
+        <result property="firstPicture" column="first_picture"></result>
+        <result property="flag" column="flag"></result>
+        <result property="views" column="views"></result>
+        <result property="appreciation" column="appreciation"></result>
+        <result property="shareStatement" column="share_statement"></result>
+        <result property="commentabled" column="commentabled"></result>
+        <result property="published" column="published"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="createTime" column="BlogCreateTime"></result>
+        <result property="updateTime" column="BlogUpdateTime"></result>
+        <result property="description" column="description"></result>
+        <association property="type" javaType="com.hjf.blog.entity.Type">
+            <id property="id" column="typeId"></id>
+            <result property="typeName" column="type_name"></result>
+        </association>
+        <association property="user" javaType="com.hjf.blog.entity.User">
+            <id property="id" column="userId"></id>
+            <result property="nickname" column="nickname"></result>
+            <result property="avatar" column="avatar"></result>
+        </association>
+    </resultMap>
+
+    <select id="findTagsByBlogId" resultMap="Blog_Tags">
+        select id,tag_name
+        from t_tag_blog,t_tag where tag_id = id
+        and blog_id = #{id}
+    </select>
+
+    <resultMap id="Blog_Tags" type="com.hjf.blog.entity.Tag">
+        <id property="id" column="id"></id>
+        <result property="tagName" column="tag_name"></result>
+    </resultMap>
+
+    <select id="findAllBlog" resultMap="Blog_Type">
+        select t_blog.id as id, title, type_id, t_type.type_name, recommend, published, update_time
+        from t_blog, t_type where t_blog.type_id = t_type.id
+        <if test="title != null and title != ''">
+            and title like "%"#{title}"%"
+        </if>
+
+        <if test="typeId != null and typeId != -1">
+            and type_id = #{typeId}
+        </if>
+        <if test="recommend == true">
+            and recommend = 1
+        </if>
+        <if test="recommend == false">
+            and recommend = 0
+        </if>
+    </select>
+
+    <resultMap id="Blog_Type" type="com.hjf.blog.entity.Blog">
+        <id property="id" column="id"></id>
+        <result property="title" column="title"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="published" column="published"></result>
+        <result property="updateTime" column="update_time"></result>
+        <association property="type" javaType="com.hjf.blog.entity.Type">
+            <result property="id" column="type_id"></result>
+            <result property="typeName" column="type_name"></result>
+        </association>
+    </resultMap>
+
+    <update id="updateOneBlog">
+        update t_blog set published = #{published}, flag = #{flag},
+                          title = #{title},  content = #{content},
+                          type_id = #{type.id}, first_picture = #{firstPicture},
+                          recommend = #{recommend}, share_statement = #{shareStatement},
+                          appreciation = #{appreciation}, commentabled = #{commentabled},
+                          update_time = #{updateTime}, description = #{description}
+        where id = #{id}
+    </update>
+
+    <delete id="deleteOneBlog">
+        delete from t_blog where id = #{id}
+    </delete>
+
+    <!-- delete from t_tag_blog where blog_id = 20 and (tag_id = 1 or tag_id =8) -->
+    <delete id="deleteTagsByBlogId">
+        delete from t_tag_blog where blog_id = #{id}
+        and
+        <foreach collection="tags" item="tag" open="(" close=")" separator="or">
+            tag_id = #{tag.id}
+        </foreach>
+    </delete>
+
+    <select id="findAllBlogs" resultMap="detailBlog">
+        select
+            t_blog.id as blogId                  ,
+            title                                ,
+            content                              ,
+            first_picture                        ,
+            flag                                 ,
+            views                                ,
+            appreciation                         ,
+            share_statement                      ,
+            commentabled                         ,
+            published                            ,
+            recommend                            ,
+            t_blog.create_time as BlogCreateTime ,
+            t_blog.update_time as BlogUpdateTime ,
+            description                          ,
+            t_type.id as typeId                  ,
+            type_name                            ,
+            t_user.id as userId                  ,
+            nickname                             ,
+            avatar
+        from t_blog,t_type,t_user
+        where t_blog.type_id = t_type.id and t_blog.user_id = t_user.id and published = 1
+    </select>
+
+    <resultMap id="detailBlog" type="com.hjf.blog.entity.Blog">
+        <id property="id" column="blogId"></id>
+        <result property="title" column="title"></result>
+        <result property="content" column="content"></result>
+        <result property="firstPicture" column="first_picture"></result>
+        <result property="flag" column="flag"></result>
+        <result property="views" column="views"></result>
+        <result property="appreciation" column="appreciation"></result>
+        <result property="shareStatement" column="share_statement"></result>
+        <result property="commentabled" column="commentabled"></result>
+        <result property="published" column="published"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="createTime" column="BlogCreateTime"></result>
+        <result property="updateTime" column="BlogUpdateTime"></result>
+        <result property="description" column="description"></result>
+        <association property="type" javaType="com.hjf.blog.entity.Type">
+            <id property="id" column="typeId"></id>
+            <result property="typeName" column="type_name"></result>
+        </association>
+        <association property="user" javaType="com.hjf.blog.entity.User">
+            <id property="id" column="userId"></id>
+            <result property="nickname" column="nickname"></result>
+            <result property="avatar" column="avatar"></result>
+        </association>
+    </resultMap>
+
+    <select id="findBlogsTop" resultType="com.hjf.blog.entity.Blog">
+        select * from t_blog where recommend = 1 and published = 1 order by create_time desc
+    </select>
+
+    <select id="getTotalBlogsCount" resultType="java.lang.Integer">
+        select count(*) from  t_blog where published = 1
+    </select>
+
+    <select id="findQueryBlogs" resultMap="queryBlog">
+        select
+            t_blog.id as blogId                  ,
+            title                                ,
+            content                              ,
+            first_picture                        ,
+            flag                                 ,
+            views                                ,
+            appreciation                         ,
+            share_statement                      ,
+            commentabled                         ,
+            published                            ,
+            recommend                            ,
+            t_blog.create_time as BlogCreateTime ,
+            t_blog.update_time as BlogUpdateTime ,
+            description                          ,
+            t_type.id as typeId                  ,
+            type_name                            ,
+            t_user.id as userId                  ,
+            nickname                             ,
+            avatar
+        from t_blog,t_type,t_user
+        where t_blog.type_id = t_type.id and t_blog.user_id = t_user.id and published = 1
+        and (title like "%"#{query}"%" or description like "%"#{query}"%")
+    </select>
+
+    <resultMap id="queryBlog" type="com.hjf.blog.entity.Blog">
+        <id property="id" column="blogId"></id>
+        <result property="title" column="title"></result>
+        <result property="content" column="content"></result>
+        <result property="firstPicture" column="first_picture"></result>
+        <result property="flag" column="flag"></result>
+        <result property="views" column="views"></result>
+        <result property="appreciation" column="appreciation"></result>
+        <result property="shareStatement" column="share_statement"></result>
+        <result property="commentabled" column="commentabled"></result>
+        <result property="published" column="published"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="createTime" column="BlogCreateTime"></result>
+        <result property="updateTime" column="BlogUpdateTime"></result>
+        <result property="description" column="description"></result>
+        <association property="type" javaType="com.hjf.blog.entity.Type">
+            <id property="id" column="typeId"></id>
+            <result property="typeName" column="type_name"></result>
+        </association>
+        <association property="user" javaType="com.hjf.blog.entity.User">
+            <id property="id" column="userId"></id>
+            <result property="nickname" column="nickname"></result>
+            <result property="avatar" column="avatar"></result>
+        </association>
+    </resultMap>
+
+    <update id="updateViews">
+        update t_blog set views = #{views} where id = #{id}
+    </update>
+
+    <select id="findBlogsByTypeId" resultMap="findBlogByTypeId">
+        select
+            t_blog.id as blogId                  ,
+            title                                ,
+            content                              ,
+            first_picture                        ,
+            flag                                 ,
+            views                                ,
+            appreciation                         ,
+            share_statement                      ,
+            commentabled                         ,
+            published                            ,
+            recommend                            ,
+            t_blog.create_time as BlogCreateTime ,
+            t_blog.update_time as BlogUpdateTime ,
+            description                          ,
+            t_type.id as typeId                  ,
+            type_name                            ,
+            t_user.id as userId                  ,
+            nickname                             ,
+            avatar
+        from t_blog,t_type,t_user
+        where t_blog.type_id = t_type.id and t_blog.user_id = t_user.id
+        and type_id = #{typeId} and published = 1
+    </select>
+
+    <resultMap id="findBlogByTypeId" type="com.hjf.blog.entity.Blog">
+        <id property="id" column="blogId"></id>
+        <result property="title" column="title"></result>
+        <result property="content" column="content"></result>
+        <result property="firstPicture" column="first_picture"></result>
+        <result property="flag" column="flag"></result>
+        <result property="views" column="views"></result>
+        <result property="appreciation" column="appreciation"></result>
+        <result property="shareStatement" column="share_statement"></result>
+        <result property="commentabled" column="commentabled"></result>
+        <result property="published" column="published"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="createTime" column="BlogCreateTime"></result>
+        <result property="updateTime" column="BlogUpdateTime"></result>
+        <result property="description" column="description"></result>
+        <association property="type" javaType="com.hjf.blog.entity.Type">
+            <id property="id" column="typeId"></id>
+            <result property="typeName" column="type_name"></result>
+        </association>
+        <association property="user" javaType="com.hjf.blog.entity.User">
+            <id property="id" column="userId"></id>
+            <result property="nickname" column="nickname"></result>
+            <result property="avatar" column="avatar"></result>
+        </association>
+    </resultMap>
+
+    <select id="findBlogsByBlogIds" resultMap="findBlogByTagId">
+        select
+            t_blog.id as blogId                  ,
+            title                                ,
+            content                              ,
+            first_picture                        ,
+            flag                                 ,
+            views                                ,
+            appreciation                         ,
+            share_statement                      ,
+            commentabled                         ,
+            published                            ,
+            recommend                            ,
+            t_blog.create_time as BlogcreateTime ,
+            t_blog.update_time as BlogUpdateTime ,
+            description                          ,
+            t_type.id as typeId                  ,
+            type_name                            ,
+            t_user.id as userId                  ,
+            nickname                             ,
+            avatar                               ,
+            t_tag_blog.tag_id as tagId           ,
+            tag_name
+        from t_blog,t_type,t_user,t_tag,t_tag_blog
+        where t_blog.type_id = t_type.id and t_blog.user_id = t_user.id
+          and t_tag.id = t_tag_blog.tag_id and t_blog.id = t_tag_blog.blog_id and published = 1
+          and t_tag.id = #{tagId}
+        group by blogId,title,content,first_picture,flag,views,appreciation,
+                 share_statement,commentabled,published,recommend,BlogcreateTime,BlogUpdateTime,
+                 description,typeId,type_name,userId,nickname,avatar
+    </select>
+
+    <resultMap id="findBlogByTagId" type="com.hjf.blog.entity.Blog">
+        <id property="id" column="blogId"></id>
+        <result property="title" column="title"></result>
+        <result property="content" column="content"></result>
+        <result property="firstPicture" column="first_picture"></result>
+        <result property="flag" column="flag"></result>
+        <result property="views" column="views"></result>
+        <result property="appreciation" column="appreciation"></result>
+        <result property="shareStatement" column="share_statement"></result>
+        <result property="commentabled" column="commentabled"></result>
+        <result property="published" column="published"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="createTime" column="BlogCreateTime"></result>
+        <result property="updateTime" column="BlogUpdateTime"></result>
+        <result property="description" column="description"></result>
+        <association property="type" javaType="com.hjf.blog.entity.Type">
+            <id property="id" column="typeId"></id>
+            <result property="typeName" column="type_name"></result>
+        </association>
+        <association property="user" javaType="com.hjf.blog.entity.User">
+            <id property="id" column="userId"></id>
+            <result property="nickname" column="nickname"></result>
+            <result property="avatar" column="avatar"></result>
+        </association>
+        <collection property="tags" javaType="ArrayList" ofType="com.hjf.blog.entity.Tag">
+            <id property="id" column="tagId"></id>
+            <result property="tagName" column="tag_name"></result>
+        </collection>
+    </resultMap>
+
+    <select id="findGroupYear" resultType="java.lang.String">
+        select date_format(t_blog.update_time,'%Y') as year
+        from t_blog where published = 1 group by year order by year desc
+    </select>
+
+    <select id="findBlogsByYear" resultType="com.hjf.blog.entity.Blog">
+        select * from t_blog where date_format(t_blog.update_time,'%Y') = #{year} and published = 1
+    </select>
+
+    <select id="findthreeBlogs" resultType="com.hjf.blog.entity.Blog">
+        select id,title from t_blog where published = 1 order by create_time desc limit 0,3
+    </select>
+
+</mapper>

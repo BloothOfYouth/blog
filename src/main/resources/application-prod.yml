@@ -1,0 +1,18 @@
+logging:
+  level:
+    root: warn
+    com.hjf.blog: info
+  file:
+    path: log/blog-prod
+spring:
+  #数据连接
+  datasource:
+    username: root
+    password: huang89703009
+    url: jdbc:mysql://8.129.177.97:3306/blog1?serverTimezone=UTC&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+file:
+  upload:
+      path: /home/BloothOfYouth/blogImg/
+      relativePath: /image/**

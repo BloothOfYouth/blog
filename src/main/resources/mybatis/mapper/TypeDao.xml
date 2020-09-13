@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hjf.blog.dao.TypeDao">
+
+    <insert id="addOneType">
+        insert into t_type values (null,#{typeName});
+    </insert>
+
+    <select id="findOneType" resultType="com.hjf.blog.entity.Type">
+        select * from t_type where id = #{id};
+    </select>
+
+    <select id="listType" resultType="com.hjf.blog.entity.Type">
+        select * from t_type limit #{start},#{count} ;
+    </select>
+
+    <select id="findAllTypeForBlog" resultMap="findAllType_Blogs">
+        select t_type.id as typeId, type_name, t_blog.id as blogId from t_type,t_blog
+        where t_type.id = t_blog.type_id and published = 1
+    </select>
+
+    <resultMap id="findAllType_Blogs" type="com.hjf.blog.entity.Type">
+        <id property="id" column="typeId"></id>
+        <result property="typeName" column="type_name"></result>
+        <collection property="blogs" javaType="ArrayList" ofType="com.hjf.blog.entity.Blog">
+            <id property="id" column="blogId"></id>
+        </collection>
+    </resultMap>
+
+    <select id="findOneTypeBytypeName" resultType="com.hjf.blog.entity.Type">
+        select * from t_type where type_name = #{typeName}
+    </select>
+
+    <select id="findAllType" resultType="com.hjf.blog.entity.Type">
+        select * from t_type
+    </select>
+
+    <select id="OrderfindAllType" resultMap="orderTypebyBlogCount">
+        select t_type.id as typeId, type_name, count(t_blog.id) from t_type,t_blog
+        where type_id = t_type.id
+        group by typeId
+        order by count(t_blog.id) desc
+    </select>
+
+    <resultMap id="orderTypebyBlogCount" type="com.hjf.blog.entity.Type">
+        <id property="id" column="typeId"></id>
+        <result property="typeName" column="type_name"></result>
+    </resultMap>
+
+    <select id="findBlogsByTypeId" resultType="com.hjf.blog.entity.Blog">
+        select id from t_blog where type_id = #{id} and published = 1
+    </select>
+
+    <select id="findSixType" resultMap="findSixType_">
+        select t_type.id as typeId, type_name, count(t_blog.id) from t_type,t_blog
+        where type_id = t_type.id
+        group by typeId
+        order by count(t_blog.id) desc limit 0,6
+    </select>
+
+    <resultMap id="findSixType_" type="com.hjf.blog.entity.Type">
+        <id property="id" column="typeId"></id>
+    </resultMap>
+
+    <update id="updateOneType">
+        update t_type set type_name = #{typeName} where id = #{id};
+    </update>
+
+    <delete id="deleteOneType">
+        delete from t_type where id = #{id};
+    </delete>
+
+</mapper>

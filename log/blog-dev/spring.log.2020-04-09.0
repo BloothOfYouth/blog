@@ -1,0 +1,3412 @@
+2020-04-09 20:30:47.336  INFO 15100 --- [restartedMain] com.hjf.blog.BlogApplication             : Starting BlogApplication on DESKTOP-9T76QD7 with PID 15100 (C:\workspace_idea\blog\target\classes started by hsj in C:\workspace_idea\blog)
+2020-04-09 20:30:47.355 DEBUG 15100 --- [restartedMain] com.hjf.blog.BlogApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-09 20:30:47.358  INFO 15100 --- [restartedMain] com.hjf.blog.BlogApplication             : The following profiles are active: dev
+2020-04-09 20:30:47.574  INFO 15100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-09 20:30:47.575  INFO 15100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-09 20:30:50.581  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$39476e20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:50.827  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$3bdaacc5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:50.884  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.hjf.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$2cab5bd4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:51.146  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:51.173  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$5902e1a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:51.190  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:51.206  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:51.246  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:51.373  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:52.373  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:52.455  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:52.492  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:52.520  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:52.556  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.hjf.blog.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:52.558  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'userRealm' of type [com.hjf.blog.config.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:52.790  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:52.839  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:52.952  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 20:30:54.169  INFO 15100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-04-09 20:30:54.191  INFO 15100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 20:30:54.192  INFO 15100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-09 20:30:54.603  INFO 15100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-09 20:30:54.622  INFO 15100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7034 ms
+2020-04-09 20:30:56.412  INFO 15100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 20:30:56.779  INFO 15100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-09 20:30:59.102  INFO 15100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-09 20:30:59.379  INFO 15100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-04-09 20:30:59.391  INFO 15100 --- [restartedMain] com.hjf.blog.BlogApplication             : Started BlogApplication in 13.518 seconds (JVM running for 15.803)
+2020-04-09 20:31:06.967  INFO 15100 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 20:31:06.969  INFO 15100 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 20:31:07.018  INFO 15100 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 49 ms
+2020-04-09 20:31:10.161  INFO 15100 --- [http-nio-80-exec-2] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.index', args=[]}
+2020-04-09 20:31:10.190  INFO 15100 --- [http-nio-80-exec-2] com.hjf.blog.aspect.LogAspect            : Result : index
+2020-04-09 20:31:13.455  INFO 15100 --- [http-nio-80-exec-8] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/footer/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.blogs', args=[{}]}
+2020-04-09 20:31:13.526  INFO 15100 --- [http-nio-80-exec-4] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/indexData/1', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.findIndexData', args=[1]}
+2020-04-09 20:31:13.558  INFO 15100 --- [http-nio-80-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 20:31:13.976  INFO 15100 --- [http-nio-80-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 20:31:14.145  INFO 15100 --- [http-nio-80-exec-8] com.hjf.blog.aspect.LogAspect            : Result : _fragments :: newblogList
+2020-04-09 20:31:14.282  INFO 15100 --- [http-nio-80-exec-4] com.hjf.blog.aspect.LogAspect            : Result : {topTags=PageInfo{pageNum=1, pageSize=7, size=5, startRow=1, endRow=5, total=5, pages=1, list=Page{count=true, pageNum=1, pageSize=7, startRow=0, endRow=7, total=5, pages=1, reasonable=true, pageSizeZero=false}[Tag{id=1, tagName='编程', blogs=[Blog{id=20, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=35, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=37, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=7, tagName='动漫', blogs=[Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=37, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=3, tagName='音乐', blogs=[Blog{id=20, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=4, tagName='吉他', blogs=[Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=5, tagName='旅游', blogs=[Blog{id=35, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, topBlogs=PageInfo{pageNum=1, pageSize=5, size=5, startRow=1, endRow=5, total=5, pages=1, list=Page{count=true, pageNum=1, pageSize=5, startRow=0, endRow=5, total=5, pages=1, reasonable=true, pageSizeZero=false}[Blog{id=38, title='测试测试测试', content='## 测试测试测试', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=true, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sun Apr 05 22:01:28 CST 2020, updateTime=Sun Apr 05 22:29:57 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='测试测试测试'}, Blog{id=36, title='mybatis测试', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=false, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sat Apr 04 20:15:07 CST 2020, updateTime=Sun Apr 05 23:20:12 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='mybatis描述'}, Blog{id=37, title='mybatis测试1', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='转载', views=6, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Fri Apr 05 07:29:45 CST 2019, updateTime=Sun Apr 05 23:18:45 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='mybatis描述22222222'}, Blog{id=35, title='测试2', content='## 2、YAML语法：
+
+### 1、基本语法
+
+k:(**空格**)v：表示一对键值对 ==空格必须有==；
+
+以**空格**的缩进来控制层级关系；只要是左对齐的一列数据，都是同一个层级的
+
+```yaml
+server:
+    port: 8081
+    path: /hello
+# server:(空格)port:(空格)8081
+```
+
+属性和值也是大小写敏感；
+
+
+
+### 2、值的写法
+
+#### 2.1、字面量：普通的值（数字，字符串，布尔）
+
+​	k:  v：字面直接来写；
+
+​		字符串默认不用加上单引号或者双引号；
+
+​		""：双引号；\n是转义字符；**特殊字符会作为本身想表示的意思**
+
+​				name:   "zhangsan \n lisi"：输出；zhangsan 换行  lisi
+
+​		''：单引号；\n就不是转义字符，**特殊字符最终只是一个普通的字符串数据**
+
+​				name:   ‘zhangsan \n lisi’：输出；zhangsan \n  lisi
+
+
+
+#### 2.2、对象、Map（属性和值）（键值对）：
+
+​	k: v：在下一行来写对象的属性和值的关系；注意缩进
+
+​		对象还是k: v的方式
+
+```yaml
+friends:
+		lastName: zhangsan
+		age: 20
+```
+
+行内写法：
+
+```yaml
+friends: {lastName: zhangsan,age: 18}
+```
+
+
+
+#### 2.3、数组（List、Set）：
+
+用- 值表示数组中的一个元素
+
+```yaml
+pets:
+ - cat
+ - dog
+ - pig
+```
+
+行内写法
+
+```yaml
+pets: [cat,dog,pig]
+```
+
+
+
+## 3、配置文件值注入
+
+### 3.1、yaml方式注入
+
+配置文件
+
+```yaml
+person:
+    lastName: hello
+    age: 18
+    boss: false
+    birth: 2017/12/12
+    maps: {k1: v1,k2: 12}
+    lists:
+      - lisi
+      - zhaoliu
+    dog:
+      name: 小狗
+      age: 12
+```
+
+javaBean：
+
+```java
+/**
+ * 将配置文件中配置的每一个属性的值，映射到这个组件中
+ * @ConfigurationProperties：告诉SpringBoot将本类中的所有属性和配置文件中相关的配置进行绑定；
+ *      prefix = "person"：配置文件中哪个下面的所有属性进行一一映射
+ *
+ * 只有这个组件是容器中的组件，才能容器提供的@ConfigurationProperties功能；
+ *
+ */
+@Component
+@ConfigurationProperties(prefix = "person")
+public class Person {
+
+    private String lastName;
+    private Integer age;
+    private Boolean boss;
+    private Date birth;
+
+    private Map<String,Object> maps;
+    private List<Object> lists;
+    private Dog dog;
+
+    ...set,get方法
+```
+
+**注意:javaBean一定要写set,get方法,这样才能注入值**
+
+我们可以导入配置文件处理器，以后编写配置就有提示了
+
+```xml
+<!--导入配置文件处理器，配置文件进行绑定就会有提示-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-configuration-processor</artifactId>
+    <optional>true</optional>
+</dependency>
+```
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=12, appreciation=true, shareStatement=false, commentabled=false, published=true, recommend=true, createTime=Thu Apr 04 14:53:51 CST 2019, updateTime=Sun Apr 05 22:01:03 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='SpringBoot111111'}, Blog{id=20, title='测试1', content='# 一、SpringBoot入门
+
+## 1.回顾Spring
+
+### 1.1、什么是Spring
+
+Spring是一个开源框架，2003 年兴起的一个轻量级的Java 开发框架，作者：Rod Johnson 。
+
+**Spring是为了解决企业级应用开发的复杂性而创建的，简化开发。**
+
+
+
+### 1.2、Spring是如何简化Java开发的
+
+为了降低Java开发的复杂性，Spring采用了以下4种关键策略：
+
+1、基于POJO的轻量级和最小侵入性编程；
+
+2、通过IOC，依赖注入（DI）和面向接口实现松耦合；
+
+3、基于切面（AOP）和惯例进行声明式编程；
+
+4、通过切面和模版减少样式代码；
+
+
+
+### 1.3、什么是SpringBoot
+
+学过javaweb的同学就知道，开发一个web应用，从最初开始接触Servlet结合Tomcat, 跑出一个Hello Wolrld程序，是要经历特别多的步骤； 后来就用了框架Struts，再后来是SpringMVC，到了现在的SpringBoot，过一两年又会有其他web框架出现；不知道你们有没经历过框架不断的演进，然后自己开发项目所有的技术也再不断的变化、改造，反正我是都经历过了，哈哈。言归正传，什么是SpringBoot呢，就是一个javaweb的开发框架，和SpringMVC类似，对比其他javaweb框架的好处，官方说是简化开发，约定大于配置， you can "just run"，能迅速的开发web应用，几行代码开发一个http接口。
+
+所有的技术框架的发展似乎都遵循了一条主线规律：从一个复杂应用场景 衍生 一种规范框架，人们只需要进行各种配置而不需要自己去实现它，这时候强大的配置功能成了优点；发展到一定程度之后，人们根据实际生产应用情况，选取其中实用功能和设计精华，重构出一些轻量级的框架；之后为了提高开发效率，嫌弃原先的各类配置过于麻烦，于是开始提倡“约定大于配置”，进而衍生出一些一站式的解决方案。
+
+是的这就是Java企业级应用->J2EE->spring->springboot的过程。
+
+随着 Spring 不断的发展，涉及的领域越来越多，项目整合开发需要配合各种各样的文件，慢慢变得不那么易用简单，违背了最初的理念，甚至人称配置地狱。Spring Boot 正是在这样的一个背景下被抽象出来的开发框架，目的为了让大家更容易的使用 Spring 、更容易的集成各种常用的中间件、开源软件；
+
+Spring Boot 基于 Spring 开发，Spirng Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，只是用于快速、敏捷地开发新一代基于 Spring 框架的应用程序。也就是说，它并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。Spring Boot 以**约定大于配置的核心思想**，默认帮我们进行了很多设置，多数 Spring Boot 应用只需要很少的 Spring 配置。同时它集成了大量常用的第三方库配置（例如 Redis、MongoDB、Jpa、RabbitMQ、Quartz 等等），Spring Boot 应用中这些第三方库几乎可以零配置的开箱即用，
+
+简单来说就是SpringBoot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，spring boot整合了所有的框架 。
+
+Spring Boot 出生名门，从一开始就站在一个比较高的起点，又经过这几年的发展，生态足够完善，Spring Boot 已经当之无愧成为 Java 领域最热门的技术。
+
+**Spring Boot的主要优点：**
+
+- 为所有Spring开发者更快的入门
+- **开箱即用**，提供各种默认配置来简化项目配置
+- 内嵌式容器简化Web项目
+- 没有冗余代码生成和XML配置的要求', firstPicture='/images/avatar.jpg', flag='原创', views=76, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Sat Apr 01 21:30:43 CST 2017, updateTime=Sun Apr 02 22:13:27 CST 2017, type=null, user=null, tags=[], comments=[], tagIds='null', description='测试1的说明'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, blogs=PageInfo{pageNum=1, pageSize=5, size=5, startRow=1, endRow=5, total=5, pages=1, list=Page{count=true, pageNum=1, pageSize=5, startRow=0, endRow=5, total=5, pages=1, reasonable=true, pageSizeZero=false}[Blog{id=20, title='测试1', content='# 一、SpringBoot入门
+
+## 1.回顾Spring
+
+### 1.1、什么是Spring
+
+Spring是一个开源框架，2003 年兴起的一个轻量级的Java 开发框架，作者：Rod Johnson 。
+
+**Spring是为了解决企业级应用开发的复杂性而创建的，简化开发。**
+
+
+
+### 1.2、Spring是如何简化Java开发的
+
+为了降低Java开发的复杂性，Spring采用了以下4种关键策略：
+
+1、基于POJO的轻量级和最小侵入性编程；
+
+2、通过IOC，依赖注入（DI）和面向接口实现松耦合；
+
+3、基于切面（AOP）和惯例进行声明式编程；
+
+4、通过切面和模版减少样式代码；
+
+
+
+### 1.3、什么是SpringBoot
+
+学过javaweb的同学就知道，开发一个web应用，从最初开始接触Servlet结合Tomcat, 跑出一个Hello Wolrld程序，是要经历特别多的步骤； 后来就用了框架Struts，再后来是SpringMVC，到了现在的SpringBoot，过一两年又会有其他web框架出现；不知道你们有没经历过框架不断的演进，然后自己开发项目所有的技术也再不断的变化、改造，反正我是都经历过了，哈哈。言归正传，什么是SpringBoot呢，就是一个javaweb的开发框架，和SpringMVC类似，对比其他javaweb框架的好处，官方说是简化开发，约定大于配置， you can "just run"，能迅速的开发web应用，几行代码开发一个http接口。
+
+所有的技术框架的发展似乎都遵循了一条主线规律：从一个复杂应用场景 衍生 一种规范框架，人们只需要进行各种配置而不需要自己去实现它，这时候强大的配置功能成了优点；发展到一定程度之后，人们根据实际生产应用情况，选取其中实用功能和设计精华，重构出一些轻量级的框架；之后为了提高开发效率，嫌弃原先的各类配置过于麻烦，于是开始提倡“约定大于配置”，进而衍生出一些一站式的解决方案。
+
+是的这就是Java企业级应用->J2EE->spring->springboot的过程。
+
+随着 Spring 不断的发展，涉及的领域越来越多，项目整合开发需要配合各种各样的文件，慢慢变得不那么易用简单，违背了最初的理念，甚至人称配置地狱。Spring Boot 正是在这样的一个背景下被抽象出来的开发框架，目的为了让大家更容易的使用 Spring 、更容易的集成各种常用的中间件、开源软件；
+
+Spring Boot 基于 Spring 开发，Spirng Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，只是用于快速、敏捷地开发新一代基于 Spring 框架的应用程序。也就是说，它并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。Spring Boot 以**约定大于配置的核心思想**，默认帮我们进行了很多设置，多数 Spring Boot 应用只需要很少的 Spring 配置。同时它集成了大量常用的第三方库配置（例如 Redis、MongoDB、Jpa、RabbitMQ、Quartz 等等），Spring Boot 应用中这些第三方库几乎可以零配置的开箱即用，
+
+简单来说就是SpringBoot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，spring boot整合了所有的框架 。
+
+Spring Boot 出生名门，从一开始就站在一个比较高的起点，又经过这几年的发展，生态足够完善，Spring Boot 已经当之无愧成为 Java 领域最热门的技术。
+
+**Spring Boot的主要优点：**
+
+- 为所有Spring开发者更快的入门
+- **开箱即用**，提供各种默认配置来简化项目配置
+- 内嵌式容器简化Web项目
+- 没有冗余代码生成和XML配置的要求', firstPicture='/images/avatar.jpg', flag='原创', views=76, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Sat Apr 01 21:30:43 CST 2017, updateTime=Sun Apr 02 22:13:27 CST 2017, type=Type{id=6, typeName='SpringBoot', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='测试1的说明'}, Blog{id=35, title='测试2', content='## 2、YAML语法：
+
+### 1、基本语法
+
+k:(**空格**)v：表示一对键值对 ==空格必须有==；
+
+以**空格**的缩进来控制层级关系；只要是左对齐的一列数据，都是同一个层级的
+
+```yaml
+server:
+    port: 8081
+    path: /hello
+# server:(空格)port:(空格)8081
+```
+
+属性和值也是大小写敏感；
+
+
+
+### 2、值的写法
+
+#### 2.1、字面量：普通的值（数字，字符串，布尔）
+
+​	k:  v：字面直接来写；
+
+​		字符串默认不用加上单引号或者双引号；
+
+​		""：双引号；\n是转义字符；**特殊字符会作为本身想表示的意思**
+
+​				name:   "zhangsan \n lisi"：输出；zhangsan 换行  lisi
+
+​		''：单引号；\n就不是转义字符，**特殊字符最终只是一个普通的字符串数据**
+
+​				name:   ‘zhangsan \n lisi’：输出；zhangsan \n  lisi
+
+
+
+#### 2.2、对象、Map（属性和值）（键值对）：
+
+​	k: v：在下一行来写对象的属性和值的关系；注意缩进
+
+​		对象还是k: v的方式
+
+```yaml
+friends:
+		lastName: zhangsan
+		age: 20
+```
+
+行内写法：
+
+```yaml
+friends: {lastName: zhangsan,age: 18}
+```
+
+
+
+#### 2.3、数组（List、Set）：
+
+用- 值表示数组中的一个元素
+
+```yaml
+pets:
+ - cat
+ - dog
+ - pig
+```
+
+行内写法
+
+```yaml
+pets: [cat,dog,pig]
+```
+
+
+
+## 3、配置文件值注入
+
+### 3.1、yaml方式注入
+
+配置文件
+
+```yaml
+person:
+    lastName: hello
+    age: 18
+    boss: false
+    birth: 2017/12/12
+    maps: {k1: v1,k2: 12}
+    lists:
+      - lisi
+      - zhaoliu
+    dog:
+      name: 小狗
+      age: 12
+```
+
+javaBean：
+
+```java
+/**
+ * 将配置文件中配置的每一个属性的值，映射到这个组件中
+ * @ConfigurationProperties：告诉SpringBoot将本类中的所有属性和配置文件中相关的配置进行绑定；
+ *      prefix = "person"：配置文件中哪个下面的所有属性进行一一映射
+ *
+ * 只有这个组件是容器中的组件，才能容器提供的@ConfigurationProperties功能；
+ *
+ */
+@Component
+@ConfigurationProperties(prefix = "person")
+public class Person {
+
+    private String lastName;
+    private Integer age;
+    private Boolean boss;
+    private Date birth;
+
+    private Map<String,Object> maps;
+    private List<Object> lists;
+    private Dog dog;
+
+    ...set,get方法
+```
+
+**注意:javaBean一定要写set,get方法,这样才能注入值**
+
+我们可以导入配置文件处理器，以后编写配置就有提示了
+
+```xml
+<!--导入配置文件处理器，配置文件进行绑定就会有提示-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-configuration-processor</artifactId>
+    <optional>true</optional>
+</dependency>
+```
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=12, appreciation=true, shareStatement=false, commentabled=false, published=true, recommend=true, createTime=Thu Apr 04 14:53:51 CST 2019, updateTime=Sun Apr 05 22:01:03 CST 2020, type=Type{id=6, typeName='SpringBoot', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='SpringBoot111111'}, Blog{id=36, title='mybatis测试', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=false, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sat Apr 04 20:15:07 CST 2020, updateTime=Sun Apr 05 23:20:12 CST 2020, type=Type{id=7, typeName='Mybatis', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='mybatis描述'}, Blog{id=37, title='mybatis测试1', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='转载', views=6, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Fri Apr 05 07:29:45 CST 2019, updateTime=Sun Apr 05 23:18:45 CST 2020, type=Type{id=7, typeName='Mybatis', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='mybatis描述22222222'}, Blog{id=38, title='测试测试测试', content='## 测试测试测试', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=true, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sun Apr 05 22:01:28 CST 2020, updateTime=Sun Apr 05 22:29:57 CST 2020, type=Type{id=1, typeName='Java', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='测试测试测试'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, totalBlogsCount=5, topTypes=PageInfo{pageNum=1, pageSize=6, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=6, startRow=0, endRow=6, total=3, pages=1, reasonable=true, pageSizeZero=false}[Type{id=6, typeName='SpringBoot', blogs=[Blog{id=20, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=35, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Type{id=7, typeName='Mybatis', blogs=[Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=37, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Type{id=1, typeName='Java', blogs=[Blog{id=38, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}}
+2020-04-09 20:31:34.209  INFO 15100 --- [http-nio-80-exec-2] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/types/-1/1', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.TypeShowController.types', args=[-1, 1, {}]}
+2020-04-09 20:31:34.256  INFO 15100 --- [http-nio-80-exec-2] com.hjf.blog.aspect.LogAspect            : Result : types
+2020-04-09 20:31:35.147  INFO 15100 --- [http-nio-80-exec-10] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/footer/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.blogs', args=[{}]}
+2020-04-09 20:31:35.152  INFO 15100 --- [http-nio-80-exec-10] com.hjf.blog.aspect.LogAspect            : Result : _fragments :: newblogList
+2020-04-09 20:32:19.758  INFO 15100 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 20:32:19.761  INFO 15100 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 20:32:19.770  INFO 15100 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-09 23:49:02.835  INFO 30244 --- [restartedMain] com.hjf.blog.BlogApplication             : Starting BlogApplication on DESKTOP-9T76QD7 with PID 30244 (C:\workspace_idea\blog\target\classes started by hsj in C:\workspace_idea\blog)
+2020-04-09 23:49:02.842 DEBUG 30244 --- [restartedMain] com.hjf.blog.BlogApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-09 23:49:02.843  INFO 30244 --- [restartedMain] com.hjf.blog.BlogApplication             : The following profiles are active: dev
+2020-04-09 23:49:03.034  INFO 30244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-09 23:49:03.034  INFO 30244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-09 23:49:05.628  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$593da21f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:05.897  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$5bd0e0c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:06.013  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.hjf.blog.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$4ca18fd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:06.365  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:06.447  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$78f9159f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:06.479  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:06.546  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:06.653  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:06.727  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:07.673  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:07.700  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:07.754  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:07.762  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [com.sun.proxy.$Proxy75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:07.781  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.hjf.blog.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:07.785  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'userRealm' of type [com.hjf.blog.config.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:08.062  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:08.120  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:08.261  INFO 30244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 23:49:09.547  INFO 30244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-04-09 23:49:09.599  INFO 30244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 23:49:09.599  INFO 30244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-09 23:49:10.040  INFO 30244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-09 23:49:10.040  INFO 30244 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7005 ms
+2020-04-09 23:49:11.619  INFO 30244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 23:49:11.973  INFO 30244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-09 23:49:15.172  INFO 30244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-09 23:49:15.275  INFO 30244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-04-09 23:49:15.284  INFO 30244 --- [restartedMain] com.hjf.blog.BlogApplication             : Started BlogApplication in 13.529 seconds (JVM running for 16.768)
+2020-04-09 23:49:33.460  INFO 30244 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 23:49:33.463  INFO 30244 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 23:49:33.494  INFO 30244 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2020-04-09 23:49:33.571  INFO 30244 --- [http-nio-80-exec-1] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.index', args=[]}
+2020-04-09 23:49:33.583  INFO 30244 --- [http-nio-80-exec-1] com.hjf.blog.aspect.LogAspect            : Result : index
+2020-04-09 23:49:36.586  INFO 30244 --- [http-nio-80-exec-4] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/footer/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.blogs', args=[{}]}
+2020-04-09 23:49:36.610  INFO 30244 --- [http-nio-80-exec-9] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/indexData/1', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.findIndexData', args=[1]}
+2020-04-09 23:49:36.686  INFO 30244 --- [http-nio-80-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 23:49:37.059  INFO 30244 --- [http-nio-80-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 23:49:37.215  INFO 30244 --- [http-nio-80-exec-4] com.hjf.blog.aspect.LogAspect            : Result : _fragments :: newblogList
+2020-04-09 23:49:37.386  INFO 30244 --- [http-nio-80-exec-9] com.hjf.blog.aspect.LogAspect            : Result : {topTags=PageInfo{pageNum=1, pageSize=7, size=5, startRow=1, endRow=5, total=5, pages=1, list=Page{count=true, pageNum=1, pageSize=7, startRow=0, endRow=7, total=5, pages=1, reasonable=true, pageSizeZero=false}[Tag{id=1, tagName='编程', blogs=[Blog{id=20, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=35, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=37, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=7, tagName='动漫', blogs=[Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=37, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=3, tagName='音乐', blogs=[Blog{id=20, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=4, tagName='吉他', blogs=[Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=5, tagName='旅游', blogs=[Blog{id=35, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, topBlogs=PageInfo{pageNum=1, pageSize=5, size=5, startRow=1, endRow=5, total=5, pages=1, list=Page{count=true, pageNum=1, pageSize=5, startRow=0, endRow=5, total=5, pages=1, reasonable=true, pageSizeZero=false}[Blog{id=38, title='测试测试测试', content='## 测试测试测试', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=true, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sun Apr 05 22:01:28 CST 2020, updateTime=Sun Apr 05 22:29:57 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='测试测试测试'}, Blog{id=36, title='mybatis测试', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=false, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sat Apr 04 20:15:07 CST 2020, updateTime=Sun Apr 05 23:20:12 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='mybatis描述'}, Blog{id=37, title='mybatis测试1', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='转载', views=6, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Fri Apr 05 07:29:45 CST 2019, updateTime=Sun Apr 05 23:18:45 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='mybatis描述22222222'}, Blog{id=35, title='测试2', content='## 2、YAML语法：
+
+### 1、基本语法
+
+k:(**空格**)v：表示一对键值对 ==空格必须有==；
+
+以**空格**的缩进来控制层级关系；只要是左对齐的一列数据，都是同一个层级的
+
+```yaml
+server:
+    port: 8081
+    path: /hello
+# server:(空格)port:(空格)8081
+```
+
+属性和值也是大小写敏感；
+
+
+
+### 2、值的写法
+
+#### 2.1、字面量：普通的值（数字，字符串，布尔）
+
+​	k:  v：字面直接来写；
+
+​		字符串默认不用加上单引号或者双引号；
+
+​		""：双引号；\n是转义字符；**特殊字符会作为本身想表示的意思**
+
+​				name:   "zhangsan \n lisi"：输出；zhangsan 换行  lisi
+
+​		''：单引号；\n就不是转义字符，**特殊字符最终只是一个普通的字符串数据**
+
+​				name:   ‘zhangsan \n lisi’：输出；zhangsan \n  lisi
+
+
+
+#### 2.2、对象、Map（属性和值）（键值对）：
+
+​	k: v：在下一行来写对象的属性和值的关系；注意缩进
+
+​		对象还是k: v的方式
+
+```yaml
+friends:
+		lastName: zhangsan
+		age: 20
+```
+
+行内写法：
+
+```yaml
+friends: {lastName: zhangsan,age: 18}
+```
+
+
+
+#### 2.3、数组（List、Set）：
+
+用- 值表示数组中的一个元素
+
+```yaml
+pets:
+ - cat
+ - dog
+ - pig
+```
+
+行内写法
+
+```yaml
+pets: [cat,dog,pig]
+```
+
+
+
+## 3、配置文件值注入
+
+### 3.1、yaml方式注入
+
+配置文件
+
+```yaml
+person:
+    lastName: hello
+    age: 18
+    boss: false
+    birth: 2017/12/12
+    maps: {k1: v1,k2: 12}
+    lists:
+      - lisi
+      - zhaoliu
+    dog:
+      name: 小狗
+      age: 12
+```
+
+javaBean：
+
+```java
+/**
+ * 将配置文件中配置的每一个属性的值，映射到这个组件中
+ * @ConfigurationProperties：告诉SpringBoot将本类中的所有属性和配置文件中相关的配置进行绑定；
+ *      prefix = "person"：配置文件中哪个下面的所有属性进行一一映射
+ *
+ * 只有这个组件是容器中的组件，才能容器提供的@ConfigurationProperties功能；
+ *
+ */
+@Component
+@ConfigurationProperties(prefix = "person")
+public class Person {
+
+    private String lastName;
+    private Integer age;
+    private Boolean boss;
+    private Date birth;
+
+    private Map<String,Object> maps;
+    private List<Object> lists;
+    private Dog dog;
+
+    ...set,get方法
+```
+
+**注意:javaBean一定要写set,get方法,这样才能注入值**
+
+我们可以导入配置文件处理器，以后编写配置就有提示了
+
+```xml
+<!--导入配置文件处理器，配置文件进行绑定就会有提示-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-configuration-processor</artifactId>
+    <optional>true</optional>
+</dependency>
+```
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=12, appreciation=true, shareStatement=false, commentabled=false, published=true, recommend=true, createTime=Thu Apr 04 14:53:51 CST 2019, updateTime=Sun Apr 05 22:01:03 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='SpringBoot111111'}, Blog{id=20, title='测试1', content='# 一、SpringBoot入门
+
+## 1.回顾Spring
+
+### 1.1、什么是Spring
+
+Spring是一个开源框架，2003 年兴起的一个轻量级的Java 开发框架，作者：Rod Johnson 。
+
+**Spring是为了解决企业级应用开发的复杂性而创建的，简化开发。**
+
+
+
+### 1.2、Spring是如何简化Java开发的
+
+为了降低Java开发的复杂性，Spring采用了以下4种关键策略：
+
+1、基于POJO的轻量级和最小侵入性编程；
+
+2、通过IOC，依赖注入（DI）和面向接口实现松耦合；
+
+3、基于切面（AOP）和惯例进行声明式编程；
+
+4、通过切面和模版减少样式代码；
+
+
+
+### 1.3、什么是SpringBoot
+
+学过javaweb的同学就知道，开发一个web应用，从最初开始接触Servlet结合Tomcat, 跑出一个Hello Wolrld程序，是要经历特别多的步骤； 后来就用了框架Struts，再后来是SpringMVC，到了现在的SpringBoot，过一两年又会有其他web框架出现；不知道你们有没经历过框架不断的演进，然后自己开发项目所有的技术也再不断的变化、改造，反正我是都经历过了，哈哈。言归正传，什么是SpringBoot呢，就是一个javaweb的开发框架，和SpringMVC类似，对比其他javaweb框架的好处，官方说是简化开发，约定大于配置， you can "just run"，能迅速的开发web应用，几行代码开发一个http接口。
+
+所有的技术框架的发展似乎都遵循了一条主线规律：从一个复杂应用场景 衍生 一种规范框架，人们只需要进行各种配置而不需要自己去实现它，这时候强大的配置功能成了优点；发展到一定程度之后，人们根据实际生产应用情况，选取其中实用功能和设计精华，重构出一些轻量级的框架；之后为了提高开发效率，嫌弃原先的各类配置过于麻烦，于是开始提倡“约定大于配置”，进而衍生出一些一站式的解决方案。
+
+是的这就是Java企业级应用->J2EE->spring->springboot的过程。
+
+随着 Spring 不断的发展，涉及的领域越来越多，项目整合开发需要配合各种各样的文件，慢慢变得不那么易用简单，违背了最初的理念，甚至人称配置地狱。Spring Boot 正是在这样的一个背景下被抽象出来的开发框架，目的为了让大家更容易的使用 Spring 、更容易的集成各种常用的中间件、开源软件；
+
+Spring Boot 基于 Spring 开发，Spirng Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，只是用于快速、敏捷地开发新一代基于 Spring 框架的应用程序。也就是说，它并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。Spring Boot 以**约定大于配置的核心思想**，默认帮我们进行了很多设置，多数 Spring Boot 应用只需要很少的 Spring 配置。同时它集成了大量常用的第三方库配置（例如 Redis、MongoDB、Jpa、RabbitMQ、Quartz 等等），Spring Boot 应用中这些第三方库几乎可以零配置的开箱即用，
+
+简单来说就是SpringBoot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，spring boot整合了所有的框架 。
+
+Spring Boot 出生名门，从一开始就站在一个比较高的起点，又经过这几年的发展，生态足够完善，Spring Boot 已经当之无愧成为 Java 领域最热门的技术。
+
+**Spring Boot的主要优点：**
+
+- 为所有Spring开发者更快的入门
+- **开箱即用**，提供各种默认配置来简化项目配置
+- 内嵌式容器简化Web项目
+- 没有冗余代码生成和XML配置的要求', firstPicture='/images/avatar.jpg', flag='原创', views=76, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Sat Apr 01 21:30:43 CST 2017, updateTime=Sun Apr 02 22:13:27 CST 2017, type=null, user=null, tags=[], comments=[], tagIds='null', description='测试1的说明'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, blogs=PageInfo{pageNum=1, pageSize=5, size=5, startRow=1, endRow=5, total=5, pages=1, list=Page{count=true, pageNum=1, pageSize=5, startRow=0, endRow=5, total=5, pages=1, reasonable=true, pageSizeZero=false}[Blog{id=20, title='测试1', content='# 一、SpringBoot入门
+
+## 1.回顾Spring
+
+### 1.1、什么是Spring
+
+Spring是一个开源框架，2003 年兴起的一个轻量级的Java 开发框架，作者：Rod Johnson 。
+
+**Spring是为了解决企业级应用开发的复杂性而创建的，简化开发。**
+
+
+
+### 1.2、Spring是如何简化Java开发的
+
+为了降低Java开发的复杂性，Spring采用了以下4种关键策略：
+
+1、基于POJO的轻量级和最小侵入性编程；
+
+2、通过IOC，依赖注入（DI）和面向接口实现松耦合；
+
+3、基于切面（AOP）和惯例进行声明式编程；
+
+4、通过切面和模版减少样式代码；
+
+
+
+### 1.3、什么是SpringBoot
+
+学过javaweb的同学就知道，开发一个web应用，从最初开始接触Servlet结合Tomcat, 跑出一个Hello Wolrld程序，是要经历特别多的步骤； 后来就用了框架Struts，再后来是SpringMVC，到了现在的SpringBoot，过一两年又会有其他web框架出现；不知道你们有没经历过框架不断的演进，然后自己开发项目所有的技术也再不断的变化、改造，反正我是都经历过了，哈哈。言归正传，什么是SpringBoot呢，就是一个javaweb的开发框架，和SpringMVC类似，对比其他javaweb框架的好处，官方说是简化开发，约定大于配置， you can "just run"，能迅速的开发web应用，几行代码开发一个http接口。
+
+所有的技术框架的发展似乎都遵循了一条主线规律：从一个复杂应用场景 衍生 一种规范框架，人们只需要进行各种配置而不需要自己去实现它，这时候强大的配置功能成了优点；发展到一定程度之后，人们根据实际生产应用情况，选取其中实用功能和设计精华，重构出一些轻量级的框架；之后为了提高开发效率，嫌弃原先的各类配置过于麻烦，于是开始提倡“约定大于配置”，进而衍生出一些一站式的解决方案。
+
+是的这就是Java企业级应用->J2EE->spring->springboot的过程。
+
+随着 Spring 不断的发展，涉及的领域越来越多，项目整合开发需要配合各种各样的文件，慢慢变得不那么易用简单，违背了最初的理念，甚至人称配置地狱。Spring Boot 正是在这样的一个背景下被抽象出来的开发框架，目的为了让大家更容易的使用 Spring 、更容易的集成各种常用的中间件、开源软件；
+
+Spring Boot 基于 Spring 开发，Spirng Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，只是用于快速、敏捷地开发新一代基于 Spring 框架的应用程序。也就是说，它并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。Spring Boot 以**约定大于配置的核心思想**，默认帮我们进行了很多设置，多数 Spring Boot 应用只需要很少的 Spring 配置。同时它集成了大量常用的第三方库配置（例如 Redis、MongoDB、Jpa、RabbitMQ、Quartz 等等），Spring Boot 应用中这些第三方库几乎可以零配置的开箱即用，
+
+简单来说就是SpringBoot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，spring boot整合了所有的框架 。
+
+Spring Boot 出生名门，从一开始就站在一个比较高的起点，又经过这几年的发展，生态足够完善，Spring Boot 已经当之无愧成为 Java 领域最热门的技术。
+
+**Spring Boot的主要优点：**
+
+- 为所有Spring开发者更快的入门
+- **开箱即用**，提供各种默认配置来简化项目配置
+- 内嵌式容器简化Web项目
+- 没有冗余代码生成和XML配置的要求', firstPicture='/images/avatar.jpg', flag='原创', views=76, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Sat Apr 01 21:30:43 CST 2017, updateTime=Sun Apr 02 22:13:27 CST 2017, type=Type{id=6, typeName='SpringBoot', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='测试1的说明'}, Blog{id=35, title='测试2', content='## 2、YAML语法：
+
+### 1、基本语法
+
+k:(**空格**)v：表示一对键值对 ==空格必须有==；
+
+以**空格**的缩进来控制层级关系；只要是左对齐的一列数据，都是同一个层级的
+
+```yaml
+server:
+    port: 8081
+    path: /hello
+# server:(空格)port:(空格)8081
+```
+
+属性和值也是大小写敏感；
+
+
+
+### 2、值的写法
+
+#### 2.1、字面量：普通的值（数字，字符串，布尔）
+
+​	k:  v：字面直接来写；
+
+​		字符串默认不用加上单引号或者双引号；
+
+​		""：双引号；\n是转义字符；**特殊字符会作为本身想表示的意思**
+
+​				name:   "zhangsan \n lisi"：输出；zhangsan 换行  lisi
+
+​		''：单引号；\n就不是转义字符，**特殊字符最终只是一个普通的字符串数据**
+
+​				name:   ‘zhangsan \n lisi’：输出；zhangsan \n  lisi
+
+
+
+#### 2.2、对象、Map（属性和值）（键值对）：
+
+​	k: v：在下一行来写对象的属性和值的关系；注意缩进
+
+​		对象还是k: v的方式
+
+```yaml
+friends:
+		lastName: zhangsan
+		age: 20
+```
+
+行内写法：
+
+```yaml
+friends: {lastName: zhangsan,age: 18}
+```
+
+
+
+#### 2.3、数组（List、Set）：
+
+用- 值表示数组中的一个元素
+
+```yaml
+pets:
+ - cat
+ - dog
+ - pig
+```
+
+行内写法
+
+```yaml
+pets: [cat,dog,pig]
+```
+
+
+
+## 3、配置文件值注入
+
+### 3.1、yaml方式注入
+
+配置文件
+
+```yaml
+person:
+    lastName: hello
+    age: 18
+    boss: false
+    birth: 2017/12/12
+    maps: {k1: v1,k2: 12}
+    lists:
+      - lisi
+      - zhaoliu
+    dog:
+      name: 小狗
+      age: 12
+```
+
+javaBean：
+
+```java
+/**
+ * 将配置文件中配置的每一个属性的值，映射到这个组件中
+ * @ConfigurationProperties：告诉SpringBoot将本类中的所有属性和配置文件中相关的配置进行绑定；
+ *      prefix = "person"：配置文件中哪个下面的所有属性进行一一映射
+ *
+ * 只有这个组件是容器中的组件，才能容器提供的@ConfigurationProperties功能；
+ *
+ */
+@Component
+@ConfigurationProperties(prefix = "person")
+public class Person {
+
+    private String lastName;
+    private Integer age;
+    private Boolean boss;
+    private Date birth;
+
+    private Map<String,Object> maps;
+    private List<Object> lists;
+    private Dog dog;
+
+    ...set,get方法
+```
+
+**注意:javaBean一定要写set,get方法,这样才能注入值**
+
+我们可以导入配置文件处理器，以后编写配置就有提示了
+
+```xml
+<!--导入配置文件处理器，配置文件进行绑定就会有提示-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-configuration-processor</artifactId>
+    <optional>true</optional>
+</dependency>
+```
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=12, appreciation=true, shareStatement=false, commentabled=false, published=true, recommend=true, createTime=Thu Apr 04 14:53:51 CST 2019, updateTime=Sun Apr 05 22:01:03 CST 2020, type=Type{id=6, typeName='SpringBoot', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='SpringBoot111111'}, Blog{id=36, title='mybatis测试', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=false, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sat Apr 04 20:15:07 CST 2020, updateTime=Sun Apr 05 23:20:12 CST 2020, type=Type{id=7, typeName='Mybatis', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='mybatis描述'}, Blog{id=37, title='mybatis测试1', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='转载', views=6, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Fri Apr 05 07:29:45 CST 2019, updateTime=Sun Apr 05 23:18:45 CST 2020, type=Type{id=7, typeName='Mybatis', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='mybatis描述22222222'}, Blog{id=38, title='测试测试测试', content='## 测试测试测试', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=true, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sun Apr 05 22:01:28 CST 2020, updateTime=Sun Apr 05 22:29:57 CST 2020, type=Type{id=1, typeName='Java', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='测试测试测试'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, totalBlogsCount=5, topTypes=PageInfo{pageNum=1, pageSize=6, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=6, startRow=0, endRow=6, total=3, pages=1, reasonable=true, pageSizeZero=false}[Type{id=6, typeName='SpringBoot', blogs=[Blog{id=20, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=35, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Type{id=7, typeName='Mybatis', blogs=[Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=37, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Type{id=1, typeName='Java', blogs=[Blog{id=38, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}}
+2020-04-09 23:49:44.630  INFO 30244 --- [http-nio-80-exec-1] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/search/1/mybatis', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.search', args=[mybatis, 1, org.apache.shiro.web.servlet.ShiroHttpServletRequest@7e467509]}
+2020-04-09 23:49:44.672  INFO 30244 --- [http-nio-80-exec-1] com.hjf.blog.aspect.LogAspect            : Result : search
+2020-04-09 23:49:45.804  INFO 30244 --- [http-nio-80-exec-3] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/footer/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.blogs', args=[{}]}
+2020-04-09 23:49:45.810  INFO 30244 --- [http-nio-80-exec-3] com.hjf.blog.aspect.LogAspect            : Result : _fragments :: newblogList
+2020-04-09 23:50:14.501  INFO 30244 --- [http-nio-80-exec-4] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/search/1/mybatis', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.search', args=[mybatis, 1, org.apache.shiro.web.servlet.ShiroHttpServletRequest@fa8994b]}
+2020-04-09 23:50:14.536  INFO 30244 --- [http-nio-80-exec-4] com.hjf.blog.aspect.LogAspect            : Result : search
+2020-04-09 23:50:15.976  INFO 30244 --- [http-nio-80-exec-7] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/footer/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.blogs', args=[{}]}
+2020-04-09 23:50:15.981  INFO 30244 --- [http-nio-80-exec-7] com.hjf.blog.aspect.LogAspect            : Result : _fragments :: newblogList
+2020-04-09 23:50:17.938  INFO 30244 --- [http-nio-80-exec-5] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/search/1/mybatis', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.search', args=[mybatis, 1, org.apache.shiro.web.servlet.ShiroHttpServletRequest@98f87c7]}
+2020-04-09 23:50:17.995  INFO 30244 --- [http-nio-80-exec-5] com.hjf.blog.aspect.LogAspect            : Result : search
+2020-04-09 23:50:19.467  INFO 30244 --- [http-nio-80-exec-10] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/footer/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.blogs', args=[{}]}
+2020-04-09 23:50:19.477  INFO 30244 --- [http-nio-80-exec-10] com.hjf.blog.aspect.LogAspect            : Result : _fragments :: newblogList
+2020-04-09 23:50:22.916  INFO 30244 --- [http-nio-80-exec-7] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/search/1/mybatis', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.search', args=[mybatis, 1, org.apache.shiro.web.servlet.ShiroHttpServletRequest@2efc841a]}
+2020-04-09 23:50:22.937  INFO 30244 --- [http-nio-80-exec-7] com.hjf.blog.aspect.LogAspect            : Result : search
+2020-04-09 23:50:24.336  INFO 30244 --- [http-nio-80-exec-6] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/footer/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.blogs', args=[{}]}
+2020-04-09 23:50:24.341  INFO 30244 --- [http-nio-80-exec-6] com.hjf.blog.aspect.LogAspect            : Result : _fragments :: newblogList
+2020-04-09 23:50:29.179  INFO 30244 --- [http-nio-80-exec-2] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.index', args=[]}
+2020-04-09 23:50:29.181  INFO 30244 --- [http-nio-80-exec-2] com.hjf.blog.aspect.LogAspect            : Result : index
+2020-04-09 23:50:30.356  INFO 30244 --- [http-nio-80-exec-1] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/footer/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.blogs', args=[{}]}
+2020-04-09 23:50:30.360  INFO 30244 --- [http-nio-80-exec-1] com.hjf.blog.aspect.LogAspect            : Result : _fragments :: newblogList
+2020-04-09 23:50:30.436  INFO 30244 --- [http-nio-80-exec-6] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/indexData/1', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.findIndexData', args=[1]}
+2020-04-09 23:50:30.515  INFO 30244 --- [http-nio-80-exec-6] com.hjf.blog.aspect.LogAspect            : Result : {topTags=PageInfo{pageNum=1, pageSize=7, size=5, startRow=1, endRow=5, total=5, pages=1, list=Page{count=true, pageNum=1, pageSize=7, startRow=0, endRow=7, total=5, pages=1, reasonable=true, pageSizeZero=false}[Tag{id=1, tagName='编程', blogs=[Blog{id=20, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=35, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=37, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=7, tagName='动漫', blogs=[Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=37, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=3, tagName='音乐', blogs=[Blog{id=20, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=4, tagName='吉他', blogs=[Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Tag{id=5, tagName='旅游', blogs=[Blog{id=35, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, topBlogs=PageInfo{pageNum=1, pageSize=5, size=5, startRow=1, endRow=5, total=5, pages=1, list=Page{count=true, pageNum=1, pageSize=5, startRow=0, endRow=5, total=5, pages=1, reasonable=true, pageSizeZero=false}[Blog{id=38, title='测试测试测试', content='## 测试测试测试', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=true, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sun Apr 05 22:01:28 CST 2020, updateTime=Sun Apr 05 22:29:57 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='测试测试测试'}, Blog{id=36, title='mybatis测试', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=false, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sat Apr 04 20:15:07 CST 2020, updateTime=Sun Apr 05 23:20:12 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='mybatis描述'}, Blog{id=37, title='mybatis测试1', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='转载', views=6, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Fri Apr 05 07:29:45 CST 2019, updateTime=Sun Apr 05 23:18:45 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='mybatis描述22222222'}, Blog{id=35, title='测试2', content='## 2、YAML语法：
+
+### 1、基本语法
+
+k:(**空格**)v：表示一对键值对 ==空格必须有==；
+
+以**空格**的缩进来控制层级关系；只要是左对齐的一列数据，都是同一个层级的
+
+```yaml
+server:
+    port: 8081
+    path: /hello
+# server:(空格)port:(空格)8081
+```
+
+属性和值也是大小写敏感；
+
+
+
+### 2、值的写法
+
+#### 2.1、字面量：普通的值（数字，字符串，布尔）
+
+​	k:  v：字面直接来写；
+
+​		字符串默认不用加上单引号或者双引号；
+
+​		""：双引号；\n是转义字符；**特殊字符会作为本身想表示的意思**
+
+​				name:   "zhangsan \n lisi"：输出；zhangsan 换行  lisi
+
+​		''：单引号；\n就不是转义字符，**特殊字符最终只是一个普通的字符串数据**
+
+​				name:   ‘zhangsan \n lisi’：输出；zhangsan \n  lisi
+
+
+
+#### 2.2、对象、Map（属性和值）（键值对）：
+
+​	k: v：在下一行来写对象的属性和值的关系；注意缩进
+
+​		对象还是k: v的方式
+
+```yaml
+friends:
+		lastName: zhangsan
+		age: 20
+```
+
+行内写法：
+
+```yaml
+friends: {lastName: zhangsan,age: 18}
+```
+
+
+
+#### 2.3、数组（List、Set）：
+
+用- 值表示数组中的一个元素
+
+```yaml
+pets:
+ - cat
+ - dog
+ - pig
+```
+
+行内写法
+
+```yaml
+pets: [cat,dog,pig]
+```
+
+
+
+## 3、配置文件值注入
+
+### 3.1、yaml方式注入
+
+配置文件
+
+```yaml
+person:
+    lastName: hello
+    age: 18
+    boss: false
+    birth: 2017/12/12
+    maps: {k1: v1,k2: 12}
+    lists:
+      - lisi
+      - zhaoliu
+    dog:
+      name: 小狗
+      age: 12
+```
+
+javaBean：
+
+```java
+/**
+ * 将配置文件中配置的每一个属性的值，映射到这个组件中
+ * @ConfigurationProperties：告诉SpringBoot将本类中的所有属性和配置文件中相关的配置进行绑定；
+ *      prefix = "person"：配置文件中哪个下面的所有属性进行一一映射
+ *
+ * 只有这个组件是容器中的组件，才能容器提供的@ConfigurationProperties功能；
+ *
+ */
+@Component
+@ConfigurationProperties(prefix = "person")
+public class Person {
+
+    private String lastName;
+    private Integer age;
+    private Boolean boss;
+    private Date birth;
+
+    private Map<String,Object> maps;
+    private List<Object> lists;
+    private Dog dog;
+
+    ...set,get方法
+```
+
+**注意:javaBean一定要写set,get方法,这样才能注入值**
+
+我们可以导入配置文件处理器，以后编写配置就有提示了
+
+```xml
+<!--导入配置文件处理器，配置文件进行绑定就会有提示-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-configuration-processor</artifactId>
+    <optional>true</optional>
+</dependency>
+```
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=12, appreciation=true, shareStatement=false, commentabled=false, published=true, recommend=true, createTime=Thu Apr 04 14:53:51 CST 2019, updateTime=Sun Apr 05 22:01:03 CST 2020, type=null, user=null, tags=[], comments=[], tagIds='null', description='SpringBoot111111'}, Blog{id=20, title='测试1', content='# 一、SpringBoot入门
+
+## 1.回顾Spring
+
+### 1.1、什么是Spring
+
+Spring是一个开源框架，2003 年兴起的一个轻量级的Java 开发框架，作者：Rod Johnson 。
+
+**Spring是为了解决企业级应用开发的复杂性而创建的，简化开发。**
+
+
+
+### 1.2、Spring是如何简化Java开发的
+
+为了降低Java开发的复杂性，Spring采用了以下4种关键策略：
+
+1、基于POJO的轻量级和最小侵入性编程；
+
+2、通过IOC，依赖注入（DI）和面向接口实现松耦合；
+
+3、基于切面（AOP）和惯例进行声明式编程；
+
+4、通过切面和模版减少样式代码；
+
+
+
+### 1.3、什么是SpringBoot
+
+学过javaweb的同学就知道，开发一个web应用，从最初开始接触Servlet结合Tomcat, 跑出一个Hello Wolrld程序，是要经历特别多的步骤； 后来就用了框架Struts，再后来是SpringMVC，到了现在的SpringBoot，过一两年又会有其他web框架出现；不知道你们有没经历过框架不断的演进，然后自己开发项目所有的技术也再不断的变化、改造，反正我是都经历过了，哈哈。言归正传，什么是SpringBoot呢，就是一个javaweb的开发框架，和SpringMVC类似，对比其他javaweb框架的好处，官方说是简化开发，约定大于配置， you can "just run"，能迅速的开发web应用，几行代码开发一个http接口。
+
+所有的技术框架的发展似乎都遵循了一条主线规律：从一个复杂应用场景 衍生 一种规范框架，人们只需要进行各种配置而不需要自己去实现它，这时候强大的配置功能成了优点；发展到一定程度之后，人们根据实际生产应用情况，选取其中实用功能和设计精华，重构出一些轻量级的框架；之后为了提高开发效率，嫌弃原先的各类配置过于麻烦，于是开始提倡“约定大于配置”，进而衍生出一些一站式的解决方案。
+
+是的这就是Java企业级应用->J2EE->spring->springboot的过程。
+
+随着 Spring 不断的发展，涉及的领域越来越多，项目整合开发需要配合各种各样的文件，慢慢变得不那么易用简单，违背了最初的理念，甚至人称配置地狱。Spring Boot 正是在这样的一个背景下被抽象出来的开发框架，目的为了让大家更容易的使用 Spring 、更容易的集成各种常用的中间件、开源软件；
+
+Spring Boot 基于 Spring 开发，Spirng Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，只是用于快速、敏捷地开发新一代基于 Spring 框架的应用程序。也就是说，它并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。Spring Boot 以**约定大于配置的核心思想**，默认帮我们进行了很多设置，多数 Spring Boot 应用只需要很少的 Spring 配置。同时它集成了大量常用的第三方库配置（例如 Redis、MongoDB、Jpa、RabbitMQ、Quartz 等等），Spring Boot 应用中这些第三方库几乎可以零配置的开箱即用，
+
+简单来说就是SpringBoot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，spring boot整合了所有的框架 。
+
+Spring Boot 出生名门，从一开始就站在一个比较高的起点，又经过这几年的发展，生态足够完善，Spring Boot 已经当之无愧成为 Java 领域最热门的技术。
+
+**Spring Boot的主要优点：**
+
+- 为所有Spring开发者更快的入门
+- **开箱即用**，提供各种默认配置来简化项目配置
+- 内嵌式容器简化Web项目
+- 没有冗余代码生成和XML配置的要求', firstPicture='/images/avatar.jpg', flag='原创', views=76, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Sat Apr 01 21:30:43 CST 2017, updateTime=Sun Apr 02 22:13:27 CST 2017, type=null, user=null, tags=[], comments=[], tagIds='null', description='测试1的说明'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, blogs=PageInfo{pageNum=1, pageSize=5, size=5, startRow=1, endRow=5, total=5, pages=1, list=Page{count=true, pageNum=1, pageSize=5, startRow=0, endRow=5, total=5, pages=1, reasonable=true, pageSizeZero=false}[Blog{id=20, title='测试1', content='# 一、SpringBoot入门
+
+## 1.回顾Spring
+
+### 1.1、什么是Spring
+
+Spring是一个开源框架，2003 年兴起的一个轻量级的Java 开发框架，作者：Rod Johnson 。
+
+**Spring是为了解决企业级应用开发的复杂性而创建的，简化开发。**
+
+
+
+### 1.2、Spring是如何简化Java开发的
+
+为了降低Java开发的复杂性，Spring采用了以下4种关键策略：
+
+1、基于POJO的轻量级和最小侵入性编程；
+
+2、通过IOC，依赖注入（DI）和面向接口实现松耦合；
+
+3、基于切面（AOP）和惯例进行声明式编程；
+
+4、通过切面和模版减少样式代码；
+
+
+
+### 1.3、什么是SpringBoot
+
+学过javaweb的同学就知道，开发一个web应用，从最初开始接触Servlet结合Tomcat, 跑出一个Hello Wolrld程序，是要经历特别多的步骤； 后来就用了框架Struts，再后来是SpringMVC，到了现在的SpringBoot，过一两年又会有其他web框架出现；不知道你们有没经历过框架不断的演进，然后自己开发项目所有的技术也再不断的变化、改造，反正我是都经历过了，哈哈。言归正传，什么是SpringBoot呢，就是一个javaweb的开发框架，和SpringMVC类似，对比其他javaweb框架的好处，官方说是简化开发，约定大于配置， you can "just run"，能迅速的开发web应用，几行代码开发一个http接口。
+
+所有的技术框架的发展似乎都遵循了一条主线规律：从一个复杂应用场景 衍生 一种规范框架，人们只需要进行各种配置而不需要自己去实现它，这时候强大的配置功能成了优点；发展到一定程度之后，人们根据实际生产应用情况，选取其中实用功能和设计精华，重构出一些轻量级的框架；之后为了提高开发效率，嫌弃原先的各类配置过于麻烦，于是开始提倡“约定大于配置”，进而衍生出一些一站式的解决方案。
+
+是的这就是Java企业级应用->J2EE->spring->springboot的过程。
+
+随着 Spring 不断的发展，涉及的领域越来越多，项目整合开发需要配合各种各样的文件，慢慢变得不那么易用简单，违背了最初的理念，甚至人称配置地狱。Spring Boot 正是在这样的一个背景下被抽象出来的开发框架，目的为了让大家更容易的使用 Spring 、更容易的集成各种常用的中间件、开源软件；
+
+Spring Boot 基于 Spring 开发，Spirng Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，只是用于快速、敏捷地开发新一代基于 Spring 框架的应用程序。也就是说，它并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。Spring Boot 以**约定大于配置的核心思想**，默认帮我们进行了很多设置，多数 Spring Boot 应用只需要很少的 Spring 配置。同时它集成了大量常用的第三方库配置（例如 Redis、MongoDB、Jpa、RabbitMQ、Quartz 等等），Spring Boot 应用中这些第三方库几乎可以零配置的开箱即用，
+
+简单来说就是SpringBoot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，spring boot整合了所有的框架 。
+
+Spring Boot 出生名门，从一开始就站在一个比较高的起点，又经过这几年的发展，生态足够完善，Spring Boot 已经当之无愧成为 Java 领域最热门的技术。
+
+**Spring Boot的主要优点：**
+
+- 为所有Spring开发者更快的入门
+- **开箱即用**，提供各种默认配置来简化项目配置
+- 内嵌式容器简化Web项目
+- 没有冗余代码生成和XML配置的要求', firstPicture='/images/avatar.jpg', flag='原创', views=76, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Sat Apr 01 21:30:43 CST 2017, updateTime=Sun Apr 02 22:13:27 CST 2017, type=Type{id=6, typeName='SpringBoot', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='测试1的说明'}, Blog{id=35, title='测试2', content='## 2、YAML语法：
+
+### 1、基本语法
+
+k:(**空格**)v：表示一对键值对 ==空格必须有==；
+
+以**空格**的缩进来控制层级关系；只要是左对齐的一列数据，都是同一个层级的
+
+```yaml
+server:
+    port: 8081
+    path: /hello
+# server:(空格)port:(空格)8081
+```
+
+属性和值也是大小写敏感；
+
+
+
+### 2、值的写法
+
+#### 2.1、字面量：普通的值（数字，字符串，布尔）
+
+​	k:  v：字面直接来写；
+
+​		字符串默认不用加上单引号或者双引号；
+
+​		""：双引号；\n是转义字符；**特殊字符会作为本身想表示的意思**
+
+​				name:   "zhangsan \n lisi"：输出；zhangsan 换行  lisi
+
+​		''：单引号；\n就不是转义字符，**特殊字符最终只是一个普通的字符串数据**
+
+​				name:   ‘zhangsan \n lisi’：输出；zhangsan \n  lisi
+
+
+
+#### 2.2、对象、Map（属性和值）（键值对）：
+
+​	k: v：在下一行来写对象的属性和值的关系；注意缩进
+
+​		对象还是k: v的方式
+
+```yaml
+friends:
+		lastName: zhangsan
+		age: 20
+```
+
+行内写法：
+
+```yaml
+friends: {lastName: zhangsan,age: 18}
+```
+
+
+
+#### 2.3、数组（List、Set）：
+
+用- 值表示数组中的一个元素
+
+```yaml
+pets:
+ - cat
+ - dog
+ - pig
+```
+
+行内写法
+
+```yaml
+pets: [cat,dog,pig]
+```
+
+
+
+## 3、配置文件值注入
+
+### 3.1、yaml方式注入
+
+配置文件
+
+```yaml
+person:
+    lastName: hello
+    age: 18
+    boss: false
+    birth: 2017/12/12
+    maps: {k1: v1,k2: 12}
+    lists:
+      - lisi
+      - zhaoliu
+    dog:
+      name: 小狗
+      age: 12
+```
+
+javaBean：
+
+```java
+/**
+ * 将配置文件中配置的每一个属性的值，映射到这个组件中
+ * @ConfigurationProperties：告诉SpringBoot将本类中的所有属性和配置文件中相关的配置进行绑定；
+ *      prefix = "person"：配置文件中哪个下面的所有属性进行一一映射
+ *
+ * 只有这个组件是容器中的组件，才能容器提供的@ConfigurationProperties功能；
+ *
+ */
+@Component
+@ConfigurationProperties(prefix = "person")
+public class Person {
+
+    private String lastName;
+    private Integer age;
+    private Boolean boss;
+    private Date birth;
+
+    private Map<String,Object> maps;
+    private List<Object> lists;
+    private Dog dog;
+
+    ...set,get方法
+```
+
+**注意:javaBean一定要写set,get方法,这样才能注入值**
+
+我们可以导入配置文件处理器，以后编写配置就有提示了
+
+```xml
+<!--导入配置文件处理器，配置文件进行绑定就会有提示-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-configuration-processor</artifactId>
+    <optional>true</optional>
+</dependency>
+```
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=12, appreciation=true, shareStatement=false, commentabled=false, published=true, recommend=true, createTime=Thu Apr 04 14:53:51 CST 2019, updateTime=Sun Apr 05 22:01:03 CST 2020, type=Type{id=6, typeName='SpringBoot', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='SpringBoot111111'}, Blog{id=36, title='mybatis测试', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=false, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sat Apr 04 20:15:07 CST 2020, updateTime=Sun Apr 05 23:20:12 CST 2020, type=Type{id=7, typeName='Mybatis', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='mybatis描述'}, Blog{id=37, title='mybatis测试1', content='1. 什么是缓存 [ Cache ]？
+   - 存在内存中的临时数据。
+   - 将用户经常查询的数据放在缓存（内存）中，用户去查询数据就不用从磁盘上(关系型数据库数据文件)查询，从缓存中查询，从而提高查询效率，解决了高并发系统的性能问题。
+2. 为什么使用缓存？
+   - 减少和数据库的交互次数，减少系统开销，提高系统效率。
+3. 什么样的数据能使用缓存？
+   - 经常查询并且不经常改变的数据。
+
+### Mybatis缓存
+
+- MyBatis包含一个非常强大的查询缓存特性，它可以非常方便地定制和配置缓存。缓存可以极大的提升查询效率。
+- MyBatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存**
+  - 默认情况下，只有一级缓存开启。（SqlSession级别的缓存，也称为本地缓存）
+  - 二级缓存需要手动开启和配置，他是基于namespace级别的缓存。
+  - 为了提高扩展性，MyBatis定义了缓存接口Cache。我们可以通过实现Cache接口来自定义二级缓存
+
+
+
+## 11.1、一级缓存
+
+- 一级缓存也叫本地缓存：
+  - 与数据库同一次会话期间查询到的数据会放在本地缓存中。
+  - 以后如果需要获取相同的数据，直接从缓存中拿，没必须再去查询数据库；
+
+### 初体验测试
+
+1. 在mybatis中加入日志，方便测试结果
+
+2. 编写接口方法
+
+   ```java
+   //根据id查询用户
+   User queryUserById(@Param("id") int id);
+   ```
+
+3. 接口对应的Mapper文件
+
+   ```xml
+   <select id="queryUserById" resultType="user">
+       select * from user where id = #{id}
+   </select>
+   ```
+
+4. 测试
+
+   ```java
+   @Test
+   public void testQueryUserById(){
+       SqlSession session = MybatisUtils.getSession();
+       UserMapper mapper = session.getMapper(UserMapper.class);
+   
+       User user = mapper.queryUserById(1);
+       System.out.println(user);
+       User user2 = mapper.queryUserById(1);
+       System.out.println(user2);
+       System.out.println(user==user2);
+   
+       session.close();
+   }
+   ```
+
+5. 结果分析
+   ![1567088746852.png](C:\Users\hsj\AppData\Roaming\Typora\typora-user-images\a7fc0d8f1226c9cd610a96b0796abefe_4067844505.png)
+
+### 一级缓存失效的四种情况
+
+- 一级缓存是SqlSession级别的缓存，是一直开启的，我们关闭不了它；
+
+- 一级缓存失效情况：没有使用到当前的一级缓存，效果就是，还需要再向数据库中发起一次查询请求！
+
+  1. sqlSession不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         SqlSession session2 = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session2.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(1);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+         session2.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！结论：**每个sqlSession中的缓存相互独立**
+
+  2. sqlSession相同，查询条件不同
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+         UserMapper mapper2 = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+         User user2 = mapper2.queryUserById(2);
+         System.out.println(user2);
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+     观察结果：发现发送了两条SQL语句！很正常的理解，结论：**当前缓存中，不存在这个数据**
+
+  3. sqlSession相同，两次查询之间执行了增删改操作！
+
+     - 增加方法
+
+       ```java
+       //修改用户
+       int updateUser(Map map);
+       ```
+
+     - 编写SQL
+
+       ```xml
+       <update id="updateUser" parameterType="map">
+           update user set name = #{name} where id = #{id}
+       </update>
+       ```
+
+     - 测试
+
+       ```java
+       @Test
+       public void testQueryUserById(){
+           SqlSession session = MybatisUtils.getSession();
+           UserMapper mapper = session.getMapper(UserMapper.class);
+       
+           User user = mapper.queryUserById(1);
+           System.out.println(user);
+       
+           HashMap map = new HashMap();
+           map.put("name","kuangshen");
+           map.put("id",4);
+           mapper.updateUser(map);
+       
+           User user2 = mapper.queryUserById(1);
+           System.out.println(user2);
+       
+           System.out.println(user==user2);
+       
+           session.close();
+       }
+       ```
+
+       观察结果：查询在中间执行了增删改操作后，重新执行了，结论：**因为增删改操作可能会对当前数据产生影响**
+
+  4. sqlSession相同，手动清除一级缓存
+
+     ```java
+     @Test
+     public void testQueryUserById(){
+         SqlSession session = MybatisUtils.getSession();
+         UserMapper mapper = session.getMapper(UserMapper.class);
+     
+         User user = mapper.queryUserById(1);
+         System.out.println(user);
+     
+         session.clearCache();//手动清除缓存
+     
+         User user2 = mapper.queryUserById(1);
+         System.out.println(user2);
+     
+         System.out.println(user==user2);
+     
+         session.close();
+     }
+     ```
+
+所以说，一级缓存类似一个map
+
+', firstPicture='/images/avatar.jpg', flag='转载', views=6, appreciation=true, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=Fri Apr 05 07:29:45 CST 2019, updateTime=Sun Apr 05 23:18:45 CST 2020, type=Type{id=7, typeName='Mybatis', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='mybatis描述22222222'}, Blog{id=38, title='测试测试测试', content='## 测试测试测试', firstPicture='/images/avatar.jpg', flag='原创', views=11, appreciation=true, shareStatement=true, commentabled=false, published=true, recommend=true, createTime=Sun Apr 05 22:01:28 CST 2020, updateTime=Sun Apr 05 22:29:57 CST 2020, type=Type{id=1, typeName='Java', blogs=[]}, user=User{id=1, nickname='BloothOfYouth', username='null', password='null', email='null', avatar='/images/avatar_meitu_1.jpg', type='null', createTime=null, updateTime=null, blogs=[]}, tags=[], comments=[], tagIds='null', description='测试测试测试'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, totalBlogsCount=5, topTypes=PageInfo{pageNum=1, pageSize=6, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=6, startRow=0, endRow=6, total=3, pages=1, reasonable=true, pageSizeZero=false}[Type{id=6, typeName='SpringBoot', blogs=[Blog{id=20, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=35, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Type{id=7, typeName='Mybatis', blogs=[Blog{id=36, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}, Blog{id=37, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}, Type{id=1, typeName='Java', blogs=[Blog{id=38, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentabled=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, user=null, tags=[], comments=[], tagIds='null', description='null'}]}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}}
+2020-04-09 23:50:33.563  INFO 30244 --- [http-nio-80-exec-2] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/search/1/mybatis', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.search', args=[mybatis, 1, org.apache.shiro.web.servlet.ShiroHttpServletRequest@32d3c147]}
+2020-04-09 23:50:33.586  INFO 30244 --- [http-nio-80-exec-2] com.hjf.blog.aspect.LogAspect            : Result : search
+2020-04-09 23:50:34.275  INFO 30244 --- [http-nio-80-exec-9] com.hjf.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost/footer/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.hjf.blog.controller.indexController.blogs', args=[{}]}
+2020-04-09 23:50:34.281  INFO 30244 --- [http-nio-80-exec-9] com.hjf.blog.aspect.LogAspect            : Result : _fragments :: newblogList
+2020-04-09 23:53:22.776  INFO 30244 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 23:53:22.779  INFO 30244 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 23:53:22.792  INFO 30244 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
