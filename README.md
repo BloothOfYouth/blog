@@ -16,4 +16,3 @@
 * 数据库：MySQL
 * 后端：SpringBoot + Thymeleaf 模板 + **Mybatis** + **Shiro**
 
-> 项目演示地址：http://8.129.177.97/
