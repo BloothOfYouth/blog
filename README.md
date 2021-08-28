@@ -12,7 +12,7 @@
 
 **本项目**
 
-* 前端UI：Semantic UI 框架，**Vue（加了一点点Vue的使用，比较乱）**
+* 前端UI：Semantic UI 框架，**Vue**
 * 数据库：MySQL
 * 后端：SpringBoot + Thymeleaf 模板 + **Mybatis** + **Shiro**
 
